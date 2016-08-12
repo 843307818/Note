@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xc.www.mynote" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activitys.MainActivity"
+            android:configChanges="keyboardHidden|orientation"> <!--避免屏幕旋转的时候重新创建实例-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.EditNote"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name=".activitys.EditPhotoViewer"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name=".activitys.EditVideoViewer"
+            android:configChanges="keyboardHidden|orientation"/>
+    </application>
+
+</manifest>

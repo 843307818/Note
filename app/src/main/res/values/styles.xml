@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //toolbar菜单弹出样式
+    <style name="PopupMenu" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:colorBackground">#d8309f92</item>
+        <item name="android:textColor">#553</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <!-- PagerSlidingTabStrip的自定义样式 -->
+    <style name="pagerTabStype">
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsDividerColor">#00000000</item>
+        <item name="pstsUnderlineHeight">1dp</item>
+        <item name="pstsIndicatorHeight">3dp</item>
+        <item name="pstsIndicatorColor">#1570A6</item>
+    </style>
+
+</resources>
